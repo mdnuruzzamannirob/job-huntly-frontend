@@ -22,13 +22,61 @@ const config: Config = {
         '5xl': '2560px', // Large desktops
       },
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-      },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        primary: {
+          DEFAULT: '#26A4FF',
+        },
+        dark: {
+          DEFAULT: '#202430',
+        },
+        light: {
+          DEFAULT: '#F8F8FD',
+        },
+        white: {
+          DEFAULT: '#FFFFFF',
+        },
+
+        // Secondary Colors
+        // secondary: {
+        //   DEFAULT: '#9333EA',
+        //   light: '#A855F7',
+        //   dark: '#6B21A8',
+        // },
+
+        // Neutrals
+        // neutral: {
+        //   '50': '#F9FAFB', // Very light gray
+        //   '100': '#F3F4F6', // Light gray
+        //   '200': '#E5E7EB', // Gray
+        //   '300': '#D1D5DB', // Medium gray
+        //   '400': '#9CA3AF', // Dark gray
+        //   '500': '#6B7280', // Darker gray
+        //   '600': '#4B5563', // Very dark gray
+        //   '700': '#374151', // Darkest gray
+        //   '800': '#1F2937', // Charcoal gray
+        //   '900': '#111827', // Almost black
+        // },
+
+        // Status Colors
+        success: {
+          DEFAULT: '#4ADE80', // Success color
+          light: '#BBF7D0', // Light success color
+          dark: '#16A34A', // Dark success color
+        },
+        error: {
+          DEFAULT: '#DC2626', // Error color
+          light: '#FECACA', // Light error color
+          dark: '#B91C1C', // Dark error color
+        },
+        warning: {
+          DEFAULT: '#F59E0B', // Warning color
+          light: '#FDE68A', // Light warning color
+          dark: '#B45309', // Dark warning color
+        },
+        info: {
+          DEFAULT: '#3B82F6', // Info color
+          light: '#93C5FD', // Light info color
+          dark: '#1E40AF', // Dark info color
+        },
       },
     },
   },

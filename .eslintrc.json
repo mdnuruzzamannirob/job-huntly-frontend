@@ -32,7 +32,7 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": ["warn"],
+    "prettier/prettier": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-unused-vars": "error"
   },
