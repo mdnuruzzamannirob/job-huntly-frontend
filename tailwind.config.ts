@@ -24,15 +24,11 @@ const config: Config = {
       colors: {
         primary: {
           DEFAULT: '#26A4FF',
-        },
-        dark: {
-          DEFAULT: '#202430',
-        },
-        light: {
-          DEFAULT: '#F8F8FD',
-        },
-        white: {
-          DEFAULT: '#FFFFFF',
+          'text-light': '#BCBDC1',
+          'text-normal': '#838A9A',
+          'text-dark': '#25324B',
+          'bg-light': '#F8F8FD',
+          'bg-dark': '#202430',
         },
 
         // Secondary Colors
