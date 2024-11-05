@@ -5,7 +5,7 @@ import LogoName from '../shared/LogoName';
 
 const Footer = () => {
   return (
-    <div className="bg-accent-dark text-neutrals-400">
+    <div className="bg-accent-dark font-medium text-neutrals-400">
       <Container>
         <Container>
           <div className="flex h-full flex-col justify-between gap-10 border-b-2 border-white/5 py-20 lg:flex-row lg:gap-32">
@@ -18,20 +18,36 @@ const Footer = () => {
             </div>
             <div className="space-y-4">
               <h3 className="font-semibold text-white">About</h3>
-              <h3 className="underline-offset-4 hover:underline">Companies</h3>
-              <h3 className="underline-offset-4 hover:underline">Pricing</h3>
-              <h3 className="underline-offset-4 hover:underline">Terms</h3>
-              <h3 className="underline-offset-4 hover:underline">Advice</h3>
-              <h3 className="underline-offset-4 hover:underline">
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Companies
+              </h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Pricing
+              </h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Terms
+              </h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Advice
+              </h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
                 Privacy Policy
               </h3>
             </div>
             <div className="space-y-4">
               <h3 className="font-semibold text-white">Resources</h3>
-              <h3 className="underline-offset-4 hover:underline">Help Docs</h3>
-              <h3 className="underline-offset-4 hover:underline">Guide</h3>
-              <h3 className="underline-offset-4 hover:underline">Updates</h3>
-              <h3 className="underline-offset-4 hover:underline">Contact Us</h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Help Docs
+              </h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Guide
+              </h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Updates
+              </h3>
+              <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+                Contact Us
+              </h3>
             </div>
             <div className="flex-1 space-y-5 text-white/70">
               <h3 className="font-semibold text-white">Get Notifications</h3>
@@ -53,7 +69,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col-reverse items-center justify-between gap-5 py-6 lg:flex-row">
-            <p className="font-Epilogue">
+            <p className="font-Epilogue text-sm">
               2024 @ Job Huntly. All rights reserved.
             </p>
 
