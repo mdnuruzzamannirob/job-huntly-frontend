@@ -15,7 +15,7 @@ const config: Config = {
         sm: '480px', // small
         md: '640px', // medium
         lg: '768px', // large
-        xl: '992px', // extra large
+        xl: '1024px', // extra large
         '2xl': '1280px', // Small laptops
         '3xl': '1440px', // Large laptops
         '4xl': '1920px', // Medium desktops

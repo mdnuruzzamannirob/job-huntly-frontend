@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const LogoName = () => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 whitespace-nowrap">
       <Image
         src={'https://example.com'}
         alt=""

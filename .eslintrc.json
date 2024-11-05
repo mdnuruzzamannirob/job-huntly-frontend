@@ -37,7 +37,8 @@
     "prettier/prettier": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-unused-vars": "error",
-    "react-hooks/exhaustive-deps": "off"
+    "react-hooks/exhaustive-deps": "off",
+    "tailwindcss/no-custom-classname": "off"
   },
   "settings": {
     "react": {

@@ -1,49 +1,49 @@
 const HomePage = () => {
   return (
     <div>
-      <div className="bg-primary-white min-h-screen text-black py-10">
-        <h3 className="text-9xl text-center py-10 text-accent">
+      <div className="bg-primary-white min-h-screen py-10 text-black">
+        <h3 className="text-accent py-10 text-center text-xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-7xl text-center py-10 text-accent-light">
+        <h3 className="text-accent-light py-10 text-center text-7xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-5xl text-center py-10 text-accent-dark">
+        <h3 className="text-accent-dark py-10 text-center text-5xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-3xl text-center py-10 text-accent">
+        <h3 className="text-accent py-10 text-center text-3xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-xl text-center py-10 text-accent-light">
+        <h3 className="text-accent-light py-10 text-center text-xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-center py-10 text-accent-dark">
+        <h3 className="text-accent-dark py-10 text-center">
           Lorem ipsum dolor sit amet.
         </h3>
 
-        <div className="py-20 mt-10 border max-w-96 mx-auto border-zinc-200"></div>
+        <div className="mx-auto mt-10 max-w-96 border border-zinc-200 py-20"></div>
       </div>
-      <div className="bg-primary-white min-h-screen text-black py-10">
-        <h3 className="text-9xl text-center py-10 text-accent">
+      <div className="bg-primary-white min-h-screen py-10 text-black">
+        <h3 className="text-accent py-10 text-center text-xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-7xl text-center py-10 text-accent-light">
+        <h3 className="text-accent-light py-10 text-center text-7xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-5xl text-center py-10 text-accent-dark">
+        <h3 className="text-accent-dark py-10 text-center text-5xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-3xl text-center py-10 text-accent">
+        <h3 className="text-accent py-10 text-center text-3xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-xl text-center py-10 text-accent-light">
+        <h3 className="text-accent-light py-10 text-center text-xl">
           Lorem ipsum dolor sit amet.
         </h3>
-        <h3 className="text-center py-10 text-accent-dark">
+        <h3 className="text-accent-dark py-10 text-center">
           Lorem ipsum dolor sit amet.
         </h3>
 
-        <div className="py-20 mt-10 border max-w-96 mx-auto border-zinc-200"></div>
+        <div className="mx-auto mt-10 max-w-96 border border-zinc-200 py-20"></div>
       </div>
     </div>
   );
