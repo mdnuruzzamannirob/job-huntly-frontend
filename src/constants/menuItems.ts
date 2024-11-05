@@ -1,10 +1,10 @@
 export const homeMenu = [
   {
-    value: 'find-jobs',
+    value: '/find-jobs',
     label: 'Find Jobs',
   },
   {
-    value: 'browse-companies',
+    value: '/browse-companies',
     label: 'Browse Companies',
   },
   {

@@ -52,7 +52,7 @@ const Button: React.FC<ContainerProps> = ({
         variant === 'secondary' &&
           'bg-primary/10 text-primary hover:bg-primary/5',
         variant === 'outline' &&
-          'border border-black/10 bg-white text-neutral-700 hover:bg-black/5',
+          'border border-black/10 bg-white text-neutrals-700 hover:bg-black/5',
         variant === 'ghost' && 'bg-white text-primary hover:bg-primary/10',
         className,
       )}

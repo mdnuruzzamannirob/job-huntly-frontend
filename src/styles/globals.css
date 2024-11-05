@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Red Hat Display', 'Epilogue', sans-serif;
 }
 
 @layer base {

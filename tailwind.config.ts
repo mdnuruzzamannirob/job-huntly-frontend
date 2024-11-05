@@ -21,6 +21,10 @@ const config: Config = {
         '4xl': '1920px', // Medium desktops
         '5xl': '2560px', // Large desktops
       },
+      fontFamily: {
+        RHDisplay: ['Red Hat Display', 'Epilogue', 'sans-serif'],
+        Epilogue: ['Epilogue', 'Red Hat Display', 'sans-serif'],
+      },
       colors: {
         // Brand colors
         primary: '#4640DE',
@@ -37,7 +41,7 @@ const config: Config = {
         },
 
         // Neutral colors
-        neutral: {
+        neutrals: {
           '100': '#F8F8FD',
           '200': '#F9FAFC',
           '300': '#E4E5E7',
@@ -68,10 +72,6 @@ const config: Config = {
           light: '#93C5FD', // Light info color
           dark: '#1E40AF', // Dark info color
         },
-      },
-      fontFamily: {
-        RHDisplay: ['Red Hat Display', 'Epilogue', 'sans-serif'],
-        Epilogue: ['Epilogue', 'Red Hat Display', 'sans-serif'],
       },
     },
   },
