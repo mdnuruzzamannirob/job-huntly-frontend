@@ -10,7 +10,9 @@ const LogoName = () => {
         height={40}
         className="size-10 rounded-full bg-primary"
       />
-      <h1 className="font-bold text-2xl text-primary-text-dark">Job Huntly</h1>
+      <h1 className="font-RHDisplay text-2xl font-bold text-neutral-700">
+        Job Huntly
+      </h1>
     </div>
   );
 };

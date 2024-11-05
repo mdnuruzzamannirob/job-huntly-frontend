@@ -22,35 +22,30 @@ const config: Config = {
         '5xl': '2560px', // Large desktops
       },
       colors: {
-        primary: {
-          DEFAULT: '#26A4FF',
-          'text-light': '#BCBDC1',
-          'text-normal': '#838A9A',
-          'text-dark': '#25324B',
-          'bg-light': '#F8F8FD',
-          'bg-dark': '#202430',
+        // Brand colors
+        primary: '#4640DE',
+        secondary: '#CCCCF5',
+        tertiary: '#E7F6FD',
+
+        // Accent colors
+        accent: {
+          purple: '#7B61FF',
+          blue: '#26A4FF',
+          red: '#FF6550',
+          green: '#56CDAD',
+          yellow: '#FFB836',
         },
 
-        // Secondary Colors
-        // secondary: {
-        //   DEFAULT: '#9333EA',
-        //   light: '#A855F7',
-        //   dark: '#6B21A8',
-        // },
-
-        // Neutrals
-        // neutral: {
-        //   '50': '#F9FAFB', // Very light gray
-        //   '100': '#F3F4F6', // Light gray
-        //   '200': '#E5E7EB', // Gray
-        //   '300': '#D1D5DB', // Medium gray
-        //   '400': '#9CA3AF', // Dark gray
-        //   '500': '#6B7280', // Darker gray
-        //   '600': '#4B5563', // Very dark gray
-        //   '700': '#374151', // Darkest gray
-        //   '800': '#1F2937', // Charcoal gray
-        //   '900': '#111827', // Almost black
-        // },
+        // Neutral colors
+        neutral: {
+          '100': '#F8F8FD',
+          '200': '#F9FAFC',
+          '300': '#E4E5E7',
+          '400': '#A8ADB7',
+          '500': '#7C8493',
+          '600': '#515B6F',
+          '700': '#25324B',
+        },
 
         // Status Colors
         success: {
@@ -73,6 +68,10 @@ const config: Config = {
           light: '#93C5FD', // Light info color
           dark: '#1E40AF', // Dark info color
         },
+      },
+      fontFamily: {
+        RHDisplay: ['Red Hat Display', 'Epilogue', 'sans-serif'],
+        Epilogue: ['Epilogue', 'Red Hat Display', 'sans-serif'],
       },
     },
   },

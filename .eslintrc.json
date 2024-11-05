@@ -11,6 +11,7 @@
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
+    "plugin:eslint-plugin-tailwindcss/recommended",
     "next",
     "next/core-web-vitals",
     "next/typescript"
@@ -29,7 +30,8 @@
     "react-hooks",
     "jsx-a11y",
     "import",
-    "prettier"
+    "prettier",
+    "tailwindcss"
   ],
   "rules": {
     "prettier/prettier": "off",

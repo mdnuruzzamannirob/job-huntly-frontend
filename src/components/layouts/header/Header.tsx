@@ -2,6 +2,7 @@
 
 import Container from '@/components/custom-ui/Container';
 import LogoName from '@/components/shared/LogoName';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const Header: React.FC = () => {
@@ -13,7 +14,7 @@ const Header: React.FC = () => {
     const currentScrollY = window.scrollY;
     setCurrentScrollY(currentScrollY);
 
-    if (currentScrollY > 300) {
+    if (currentScrollY > 600) {
       if (currentScrollY > lastScrollY) {
         // Scrolling down - hide the header
         setShowHeader(false);
@@ -38,12 +39,23 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`bg-white border  fixed w-full h-16 xl:h-20 z-[99] duration-500 ease-out ${
+      className={`fixed z-[99] h-16 w-full border bg-white font-RHDisplay duration-500 ease-out xl:h-20 ${
         showHeader ? 'translate-y-0' : '-translate-y-full'
       } ${currentScrollY ? 'border-black/10' : 'border-transparent'}`}
     >
-      <Container>
-        <LogoName />
+      <Container className="flex h-full items-center justify-between">
+        <div className="flex items-center gap-10">
+          <LogoName />
+          <div className="flex items-center gap-5">
+            <Link href={'/'}>Find Jobs</Link>
+            <Link href={'/'}>Browse Companies</Link>
+            <Link href={'/'}>About Us</Link>
+          </div>
+        </div>
+        <div className="flex items-center gap-5">
+          <Link href={'/'}>Login</Link>
+          <Link href={'/'}>Sign Up</Link>
+        </div>
       </Container>
     </div>
   );
