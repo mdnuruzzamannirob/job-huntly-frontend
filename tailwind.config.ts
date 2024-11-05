@@ -38,6 +38,7 @@ const config: Config = {
           red: '#FF6550',
           green: '#56CDAD',
           yellow: '#FFB836',
+          dark: '#202430',
         },
 
         // Neutral colors

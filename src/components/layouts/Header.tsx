@@ -51,11 +51,11 @@ const Header = () => {
         showHeader ? 'translate-y-0' : '-translate-y-full'
       } ${currentScrollY ? 'border-black/10' : 'border-transparent'}`}
     >
-      <Container className="flex h-full items-center justify-between gap-10">
+      <Container className="flex h-full items-center justify-between">
         <LogoName />
 
         {/* menu */}
-        <div className="hidden w-full items-center gap-5 xl:flex">
+        <div className="hidden items-center gap-5 xl:flex">
           {homeMenu.map((menu) => (
             <Link
               href={menu.value}

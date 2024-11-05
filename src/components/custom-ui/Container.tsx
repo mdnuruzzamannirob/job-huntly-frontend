@@ -12,7 +12,7 @@ const Container: React.FC<ContainerProps> = ({
   ...rest
 }) => {
   return (
-    <div {...rest} className={cn('max-w-7xl mx-auto px-4 md:px-5', className)}>
+    <div {...rest} className={cn('mx-auto max-w-7xl px-4 md:px-5', className)}>
       {children}
     </div>
   );
