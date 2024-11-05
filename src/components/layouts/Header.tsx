@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { ResponsiveDrawer } from './Drawer';
 import { homeMenu } from '@/constants/menuItems';
+import Button from '../custom-ui/Button';
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
@@ -64,10 +65,9 @@ const Header = () => {
             <button className="size-full rounded-full bg-primary"></button>
           </div>
         ) : (
-          <div className="hidden items-center gap-5 whitespace-nowrap xl:flex">
-            <Link href={'/'}>Login</Link>
-            <Link href={'/'}>Sign Up</Link>
-          </div>
+          <Link href="/signup" className="hidden whitespace-nowrap xl:block">
+            <Button>Login</Button>
+          </Link>
         )}
         <ResponsiveDrawer />
       </Container>
