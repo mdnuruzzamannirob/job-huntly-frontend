@@ -7,8 +7,8 @@ import { useEffect, useState } from 'react';
 import { ResponsiveDrawer } from './Drawer';
 import { homeMenu } from '@/constants/menuItems';
 import Button from '../custom-ui/Button';
-import { Avatar, AvatarFallback, AvatarImage } from '../shadcn-ui/avatar';
 import { usePathname } from 'next/navigation';
+import UserProfile from './UserProfile';
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
@@ -75,15 +75,7 @@ const Header = () => {
             >
               Dashboard
             </Link>
-            <button className="flex size-10 min-w-10 items-center justify-center rounded-full bg-primary/10 text-2xl text-primary">
-              <Avatar>
-                <AvatarImage
-                  src="https://github.com/shadcn.png"
-                  alt="@shadcn"
-                />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-            </button>
+            <UserProfile currentScrollY={currentScrollY} />
           </div>
         ) : (
           <div className="hidden items-center gap-3 whitespace-nowrap xl:flex">

@@ -8,7 +8,11 @@ export const homeMenu = [
     label: 'Browse Companies',
   },
   {
-    value: 'about-us',
-    label: 'About Us',
+    value: 'about',
+    label: 'About',
+  },
+  {
+    value: 'resources',
+    label: 'Resources',
   },
 ];
