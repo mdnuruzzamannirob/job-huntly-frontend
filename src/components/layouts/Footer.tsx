@@ -7,13 +7,31 @@ const Footer = () => {
   return (
     <footer className="bg-accent-dark font-medium text-neutrals-400">
       <Container>
-        <div className="flex h-full flex-col justify-between gap-10 border-b-2 border-white/5 py-20 lg:flex-row lg:gap-32">
-          <div className="flex-1 space-y-5 text-white">
+        <div className="grid grid-cols-2 gap-5 border-b-2 border-white/5 py-10 md:grid-cols-3 md:py-16 lg:grid-cols-5 xl:grid-cols-7 xl:py-20 2xl:gap-10">
+          <div className="col-span-full mb-5 space-y-5 text-white xl:col-span-2 xl:mb-0">
             <LogoName className="text-neutral-50" />
             <p className="text-white/70">
               Great platform for the job seeker that passionate about startups.
               Find your dream job easier.
             </p>
+          </div>
+          <div className="space-y-4">
+            <h3 className="font-semibold text-white">About</h3>
+            <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+              Companies
+            </h3>
+            <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+              Pricing
+            </h3>
+            <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+              Terms
+            </h3>
+            <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+              Advice
+            </h3>
+            <h3 className="cursor-pointer duration-200 ease-linear hover:text-neutrals-100">
+              Privacy Policy
+            </h3>
           </div>
           <div className="space-y-4">
             <h3 className="font-semibold text-white">About</h3>
@@ -48,20 +66,22 @@ const Footer = () => {
               Contact Us
             </h3>
           </div>
-          <div className="flex-1 space-y-5 text-white/70">
+          <div className="col-span-full mt-5 space-y-5 text-white/70 lg:col-span-2 xl:mt-0">
             <h3 className="font-semibold text-white">Get Notifications</h3>
             <p>
               The latest job news, articles and more sent to your inbox weekly.
             </p>
-            <div className="grid w-full grid-cols-3 gap-2">
+            <div className="grid w-full grid-cols-5 gap-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-3">
               <input
-                className="col-span-2 h-full rounded border border-neutrals-600 bg-transparent px-3 text-sm text-neutral-50 outline-none ring-2 ring-transparent focus:border-transparent focus:ring-primary"
+                className="col-span-3 h-full rounded border border-neutrals-600 bg-transparent px-3 text-sm text-neutral-50 outline-none ring-2 ring-transparent focus:border-transparent focus:ring-primary md:col-span-1 lg:col-span-3 2xl:col-span-2"
                 type="email"
                 name=""
                 id=""
                 placeholder="example@gmail.com"
               />
-              <Button>Subscribe</Button>
+              <Button className="col-span-2 md:col-span-1 lg:col-span-2 2xl:col-span-1">
+                Subscribe
+              </Button>
             </div>
           </div>
         </div>

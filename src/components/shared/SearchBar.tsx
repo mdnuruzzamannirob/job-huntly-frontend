@@ -2,11 +2,17 @@ import { FiSearch } from 'react-icons/fi';
 import { SlLocationPin } from 'react-icons/sl';
 // import { IoIosArrowDown } from 'react-icons/io';
 import Button from '../custom-ui/Button';
+import { cn } from '@/lib/utils';
 
-const SearchBar = () => {
+const SearchBar = ({ className = '' }) => {
   return (
-    <div className="grid size-full grid-cols-1 gap-10 p-4 md:grid-cols-5">
-      <div className="flex items-center gap-3 md:col-span-2">
+    <div
+      className={cn(
+        'grid size-full grid-cols-1 gap-10 p-4 md:grid-cols-3 lg:grid-cols-5',
+        className,
+      )}
+    >
+      <div className="flex items-center gap-3 lg:col-span-2">
         <p className="text-lg">
           <FiSearch />
         </p>
@@ -18,7 +24,7 @@ const SearchBar = () => {
           placeholder="Job title or keyword"
         />
       </div>
-      <div className="flex items-center gap-3 md:col-span-2">
+      <div className="flex items-center gap-3 lg:col-span-2">
         <p className="text-lg">
           <SlLocationPin />
         </p>
