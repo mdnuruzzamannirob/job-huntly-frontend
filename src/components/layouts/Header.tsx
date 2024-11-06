@@ -46,7 +46,7 @@ const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <div
+    <header
       className={`fixed z-[99] h-16 w-full border bg-white font-RHDisplay duration-500 ease-out xl:h-20 ${
         showHeader ? 'translate-y-0' : '-translate-y-full'
       } ${currentScrollY ? 'border-black/10' : 'border-transparent'}`}
@@ -91,7 +91,7 @@ const Header = () => {
         )}
         <ResponsiveDrawer />
       </Container>
-    </div>
+    </header>
   );
 };
 

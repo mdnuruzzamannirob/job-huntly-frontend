@@ -1,5 +1,44 @@
+import Container from '@/components/custom-ui/Container';
+import Image from 'next/image';
+import SearchBar from '../SearchBar';
+
 const BannerSection = () => {
-  return <div></div>;
+  return (
+    <Container className="relative flex min-h-dvh items-center justify-between py-20">
+      <div className="relative w-full">
+        <h1 className="select-none text-8xl font-extrabold">
+          Discover <br />{' '}
+          <span className="font-Epilogue font-semibold">more than</span> <br />{' '}
+          <span className="text-primary">5000+</span> Jobs
+        </h1>
+        <Image
+          src="/root-images/Vector.svg"
+          alt=""
+          width={350}
+          height={35}
+          className="select-none"
+        />
+        <p className="mb-12 mt-8 text-xl font-medium text-neutrals-600 md:mb-32">
+          Great platform for the job seeker that searching for new career <br />
+          heights and passionate about startups.
+        </p>
+
+        <div className="-bottom-0 left-0 z-10 w-full rounded bg-neutrals-100 md:absolute md:h-20 lg:w-[700px] 2xl:w-[800px]">
+          <SearchBar />
+        </div>
+      </div>
+
+      <div className="hidden min-h-[400px] min-w-[400px] items-center justify-center xl:flex">
+        <Image
+          src="/root-images/banner-img.png"
+          alt=""
+          width={500}
+          height={500}
+          className="size-full"
+        />
+      </div>
+    </Container>
+  );
 };
 
 export default BannerSection;

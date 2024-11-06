@@ -15,32 +15,42 @@ const UserProfile = ({ currentScrollY }: { currentScrollY: number }) => {
     }
   }, [currentScrollY]);
 
+  const username = {
+    name: 'Md. Nuruzzaman',
+    email: 'mduruzzaman@gmail.com',
+  };
+
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger
         asChild
-        className="flex size-10 min-w-10 items-center justify-center rounded-full bg-primary/10 text-2xl text-primary"
+        className="flex size-10 min-w-10 cursor-pointer items-center justify-center rounded-full bg-primary/10 text-2xl text-primary"
       >
         <Avatar>
           <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </PopoverTrigger>
-      <PopoverContent align="end" className="z-[100] flex w-40 flex-col gap-3">
+      <PopoverContent align="end" className="z-[100] flex w-52 flex-col gap-3">
+        <div className="">
+          <p className="size-10 rounded-full bg-secondary"></p>
+          <h3 className="font-semibold">{username.name}</h3>
+          <p className="text-sm">{username.email}</p>
+        </div>
         <Link
           href="/applicant"
-          className="group flex items-center justify-between font-medium text-neutrals-600 duration-200 ease-linear hover:text-black"
+          className="group flex items-center justify-between font-medium text-neutrals-600 outline-none duration-200 ease-linear hover:text-black"
         >
           Profile{' '}
           <ImProfile className="text-neutrals-400 duration-200 ease-linear group-hover:text-neutrals-500" />
         </Link>
         <Link
           href="/applicant"
-          className="flex items-center justify-between font-medium text-neutrals-600 duration-200 ease-linear hover:text-black"
+          className="flex items-center justify-between font-medium text-neutrals-600 outline-none duration-200 ease-linear hover:text-black"
         >
           Settings <CiSettings className="text-lg" />
         </Link>
-        <button className="flex items-center justify-between font-medium text-neutrals-600 duration-200 ease-linear hover:text-black">
+        <button className="flex items-center justify-between font-medium text-neutrals-600 outline-none duration-200 ease-linear hover:text-black">
           Logout <IoIosLogOut />
         </button>
       </PopoverContent>
