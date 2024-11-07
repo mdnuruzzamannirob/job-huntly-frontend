@@ -40,6 +40,7 @@
     "react-hooks/exhaustive-deps": "off",
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/classnames-order": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "prefer-const": "error",
     "no-console": "warn"
   },

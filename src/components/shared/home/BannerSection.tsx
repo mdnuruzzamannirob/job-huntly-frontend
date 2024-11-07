@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar';
 
 const BannerSection = () => {
   return (
-    <div className="relative overflow-hidden">
+    <section className="relative overflow-hidden">
       <Container className="relative flex min-h-dvh items-center justify-between py-20">
         <div className="relative w-full">
           <h1 className="select-none text-5xl font-extrabold md:text-6xl 2xl:text-7xl">
@@ -58,7 +58,7 @@ const BannerSection = () => {
           className="size-full select-none"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
