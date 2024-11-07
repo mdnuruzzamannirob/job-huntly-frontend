@@ -7,7 +7,7 @@ const BannerSection = () => {
     <div className="relative overflow-hidden">
       <Container className="relative flex min-h-dvh items-center justify-between py-20">
         <div className="relative w-full">
-          <h1 className="select-none text-5xl font-extrabold md:text-6xl xl:text-7xl">
+          <h1 className="select-none text-5xl font-extrabold md:text-6xl 2xl:text-7xl">
             Discover <br />{' '}
             <span className="font-Epilogue font-semibold">more than</span>{' '}
             <br /> <span className="text-primary">5000+</span> Jobs
@@ -17,7 +17,7 @@ const BannerSection = () => {
             alt=""
             width={350}
             height={35}
-            className="w-40 select-none md:w-52 xl:w-60"
+            className="w-40 select-none md:w-52 2xl:w-60"
           />
           <p className="mb-12 mt-8 text-lg font-medium text-neutrals-600 md:mb-[156px] md:text-xl">
             Great platform for the job seeker that searching for new career
@@ -29,7 +29,7 @@ const BannerSection = () => {
 
           <div className="bottom-0 left-0 z-10 w-full rounded md:absolute lg:w-[700px] 2xl:w-[800px]">
             <SearchBar className="bg-neutrals-100 md:h-20" />
-            <p className="mt-5 font-medium text-neutrals-600 md:text-lg">
+            <p className="mt-5 text-sm font-medium text-neutrals-600 md:text-base">
               Popular :{' '}
               <span className="font-bold">
                 UI Designer, UX Researcher, Android, Admin
