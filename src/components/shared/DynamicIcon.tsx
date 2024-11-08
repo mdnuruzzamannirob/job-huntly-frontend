@@ -1,3 +1,5 @@
+'use client';
+
 import dynamic from 'next/dynamic';
 
 // Mapping for icon families to their respective imports
@@ -40,28 +42,33 @@ const iconLibraries: { [key: string]: string } = {
 type DynamicIconProps = {
   iconFamily: keyof typeof iconLibraries; // The family of the icon (e.g., 'fa', 'fi', 'md', etc.)
   icon: string; // The specific icon name (e.g., 'FaHome', 'FiSettings', etc.)
+  fallback?: React.ReactNode; // Optional custom fallback element
 };
 
-const DynamicIcon = ({ iconFamily, icon }: DynamicIconProps) => {
-  // Ensure the iconFamily is valid
-  if (!iconLibraries[iconFamily]) {
-    return null;
-  }
-
-  // Ensure the icon string is valid and not empty
-  if (!icon || typeof icon !== 'string') {
+const DynamicIcon = ({
+  iconFamily,
+  icon,
+  fallback = null,
+}: DynamicIconProps) => {
+  // Ensure the iconFamily and icon are valid
+  if (!iconLibraries[iconFamily] || !icon) {
     return null;
   }
 
   // Dynamically import the icon from the appropriate library
   const IconComponent = dynamic(
-    () =>
-      import(`${iconLibraries[iconFamily]}`)
-        .then((mod) => mod[icon])
-        .catch(() => null), // Catch import error if icon does not exist
+    async () => {
+      try {
+        const mod = await import(`${iconLibraries[iconFamily]}`);
+        return mod[icon] || null; // Return the icon if it exists, or null if not
+      } catch {
+        return null;
+      }
+    },
+    { ssr: false, loading: () => <>{fallback}</> },
   );
 
-  // If IconComponent fails to load, show fallback UI
+  // If IconComponent is null, display a fallback or return null
   return IconComponent ? <IconComponent /> : null;
 };
 

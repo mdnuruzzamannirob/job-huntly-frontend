@@ -1,6 +1,7 @@
 import { FaArrowRightLong } from 'react-icons/fa6';
 import DynamicIcon from './DynamicIcon';
 import { cn } from '@/lib/utils';
+import { Skeleton } from '../shadcn-ui/skeleton';
 
 type TCategoryCardProps = {
   category: any;
@@ -23,6 +24,7 @@ const CategoryCard = ({
         <DynamicIcon
           iconFamily={category.iconFamily.trim()}
           icon={category.icon.trim()}
+          fallback={<Skeleton className="size-full" />}
         />
       </div>
       <div className="w-full">
