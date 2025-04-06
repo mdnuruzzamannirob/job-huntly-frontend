@@ -16,7 +16,7 @@ const JobCard = ({
   return (
     <div
       className={cn(
-        'group flex cursor-pointer flex-row items-center gap-4 rounded border p-3 duration-200 ease-linear hover:bg-primary/5 md:p-4 lg:flex-col lg:items-start',
+        'group flex cursor-pointer flex-row items-center gap-4 rounded-sm border p-3 duration-200 ease-linear hover:bg-primary/5 md:p-4 lg:flex-col lg:items-start',
         className,
       )}
     >

@@ -27,7 +27,7 @@ const BannerSection = () => {
             </span>
           </p>
 
-          <div className="bottom-0 left-0 z-10 w-full rounded md:absolute lg:w-[700px] 2xl:w-[800px]">
+          <div className="bottom-0 left-0 z-10 w-full rounded-sm md:absolute lg:w-[700px] 2xl:w-[800px]">
             <SearchBar className="bg-neutrals-100 md:h-20" />
             <p className="mt-5 text-sm font-medium text-neutrals-600 md:text-base">
               Popular :{' '}

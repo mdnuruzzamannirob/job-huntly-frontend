@@ -18,7 +18,7 @@ export function ResponsiveDrawer() {
       <DrawerTrigger asChild className="min-h-6 min-w-6 xl:hidden">
         <FiSidebar />
       </DrawerTrigger>
-      <DrawerContent className="z-[100] h-dvh">
+      <DrawerContent className="z-100 h-dvh">
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader>
             <DrawerTitle>Move Goal</DrawerTitle>

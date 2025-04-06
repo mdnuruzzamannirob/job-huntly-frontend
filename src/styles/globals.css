@@ -1,12 +1,83 @@
 /* Red Hat Display and Epilogue Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-body {
-  font-family: 'Red Hat Display', 'Epilogue', sans-serif;
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --breakpoint-xs: 360px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 640px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1280px;
+  --breakpoint-3xl: 1440px;
+  --breakpoint-4xl: 1920px;
+  --breakpoint-5xl: 2560px;
+
+  --font-RHDisplay: Red Hat Display, Epilogue, sans-serif;
+  --font-Epilogue: Epilogue, Red Hat Display, sans-serif;
+
+  --color-primary: #4640de;
+  --color-secondary: #ccccf5;
+  --color-tertiary: #e7f6fd;
+
+  --color-accent-purple: #7b61ff;
+  --color-accent-blue: #26a4ff;
+  --color-accent-red: #ff6550;
+  --color-accent-green: #56cdad;
+  --color-accent-yellow: #ffb836;
+  --color-accent-dark: #202430;
+
+  --color-neutrals-100: #f8f8fd;
+  --color-neutrals-200: #f9fafc;
+  --color-neutrals-300: #e4e5e7;
+  --color-neutrals-400: #a8adb7;
+  --color-neutrals-500: #7c8493;
+  --color-neutrals-600: #515b6f;
+  --color-neutrals-700: #25324b;
+
+  --color-success: #4ade80;
+  --color-success-light: #bbf7d0;
+  --color-success-dark: #16a34a;
+
+  --color-error: #dc2626;
+  --color-error-light: #fecaca;
+  --color-error-dark: #b91c1c;
+
+  --color-warning: #f59e0b;
+  --color-warning-light: #fde68a;
+  --color-warning-dark: #b45309;
+
+  --color-info: #3b82f6;
+  --color-info-light: #93c5fd;
+  --color-info-dark: #1e40af;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: 'Red Hat Display', 'Epilogue', sans-serif;
+  }
 }
 
 @layer base {

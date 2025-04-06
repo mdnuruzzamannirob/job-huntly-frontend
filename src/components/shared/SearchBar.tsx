@@ -20,7 +20,7 @@ const SearchBar = ({ className = '' }) => {
           type="text"
           name=""
           id=""
-          className="h-10 w-full border-b-2 border-neutrals-300 bg-transparent outline-none focus:border-neutrals-500"
+          className="h-10 w-full border-b-2 border-neutrals-300 bg-transparent outline-hidden focus:border-neutrals-500"
           placeholder="Job title or keyword"
         />
       </div>
@@ -32,7 +32,7 @@ const SearchBar = ({ className = '' }) => {
           type="text"
           name=""
           id=""
-          className="h-10 w-full border-b-2 border-neutrals-300 bg-transparent outline-none focus:border-neutrals-500"
+          className="h-10 w-full border-b-2 border-neutrals-300 bg-transparent outline-hidden focus:border-neutrals-500"
           placeholder="Florence, Italy"
         />
       </div>

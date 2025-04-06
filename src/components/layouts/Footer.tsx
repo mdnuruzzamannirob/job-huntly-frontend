@@ -73,7 +73,7 @@ const Footer = () => {
             </p>
             <div className="grid w-full grid-cols-5 gap-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-3">
               <input
-                className="col-span-3 h-full rounded border border-neutrals-600 bg-transparent px-3 text-sm text-neutral-50 outline-none ring-2 ring-transparent focus:border-transparent focus:ring-primary md:col-span-1 lg:col-span-3 2xl:col-span-2"
+                className="col-span-3 h-full rounded-sm border border-neutrals-600 bg-transparent px-3 text-sm text-neutral-50 outline-hidden ring-2 ring-transparent focus:border-transparent focus:ring-primary md:col-span-1 lg:col-span-3 2xl:col-span-2"
                 type="email"
                 name=""
                 id=""

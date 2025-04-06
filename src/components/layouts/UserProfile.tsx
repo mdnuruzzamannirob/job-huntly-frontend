@@ -31,7 +31,7 @@ const UserProfile = ({ currentScrollY }: { currentScrollY: number }) => {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </PopoverTrigger>
-      <PopoverContent align="end" className="z-[100] flex w-52 flex-col gap-3">
+      <PopoverContent align="end" className="z-100 flex w-52 flex-col gap-3">
         <div className="">
           <p className="size-10 rounded-full bg-secondary"></p>
           <h3 className="font-semibold">{username.name}</h3>
@@ -39,18 +39,18 @@ const UserProfile = ({ currentScrollY }: { currentScrollY: number }) => {
         </div>
         <Link
           href="/applicant"
-          className="group flex items-center justify-between font-medium text-neutrals-600 outline-none duration-200 ease-linear hover:text-black"
+          className="group flex items-center justify-between font-medium text-neutrals-600 outline-hidden duration-200 ease-linear hover:text-black"
         >
           Profile{' '}
           <ImProfile className="text-neutrals-400 duration-200 ease-linear group-hover:text-neutrals-500" />
         </Link>
         <Link
           href="/applicant"
-          className="flex items-center justify-between font-medium text-neutrals-600 outline-none duration-200 ease-linear hover:text-black"
+          className="flex items-center justify-between font-medium text-neutrals-600 outline-hidden duration-200 ease-linear hover:text-black"
         >
           Settings <CiSettings className="text-lg" />
         </Link>
-        <button className="flex items-center justify-between font-medium text-neutrals-600 outline-none duration-200 ease-linear hover:text-black">
+        <button className="flex items-center justify-between font-medium text-neutrals-600 outline-hidden duration-200 ease-linear hover:text-black">
           Logout <IoIosLogOut />
         </button>
       </PopoverContent>

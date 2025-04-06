@@ -21,7 +21,7 @@ const Button: React.FC<ContainerProps> = ({
       {...rest}
       disabled={true}
       className={cn(
-        'flex select-none items-center justify-center gap-2 rounded bg-black/50 font-RHDisplay font-bold text-white hover:bg-black/50',
+        'flex select-none items-center justify-center gap-2 rounded-sm bg-black/50 font-RHDisplay font-bold text-white hover:bg-black/50',
         size === 'xs' && 'px-3 py-1 text-[10px]',
         size === 'sm' && 'px-4 py-[6px] text-xs',
         size === 'md' && 'px-5 py-2 text-sm',
@@ -44,7 +44,7 @@ const Button: React.FC<ContainerProps> = ({
     <button
       {...rest}
       className={cn(
-        'select-none rounded bg-primary font-RHDisplay font-bold text-white duration-200 ease-out hover:bg-primary/95 active:scale-95',
+        'select-none rounded-sm bg-primary font-RHDisplay font-bold text-white duration-200 ease-out hover:bg-primary/95 active:scale-95',
         size === 'xs' && 'px-3 py-1 text-[10px]',
         size === 'sm' && 'px-4 py-[6px] text-xs',
         size === 'md' && 'px-5 py-2 text-sm',
