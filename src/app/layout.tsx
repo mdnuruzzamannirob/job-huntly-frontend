@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Job Huntly - A job portal website',
-  description: 'A job portal website',
+  title: 'Job Huntly - A job hunting website',
+  description: 'A job hunting website',
 };
 
 export default function RootLayout({

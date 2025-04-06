@@ -10,11 +10,11 @@ const LogoName = ({ className = '' }) => {
         alt=""
         width={40}
         height={40}
-        className="size-10 rounded-full bg-primary"
+        className="size-8 rounded-full bg-primary xl:size-10"
       />
       <h1
         className={cn(
-          'font-RHDisplay text-xl font-bold text-neutrals-700',
+          'font-RHDisplay text-lg font-bold text-neutrals-700 xl:text-xl',
           className,
         )}
       >

@@ -1,6 +1,6 @@
 import Container from '@/components/custom-ui/Container';
 import Button from '@/components/custom-ui/Button';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import { FaArrowRightLong } from 'react-icons/fa6';
 import { categories } from '@/constants/categories';
 import CategoryCard from '../CategoryCard';
 
@@ -15,7 +15,7 @@ const CategorySection = () => {
           variant="ghost"
           className="hidden items-center justify-center gap-2 md:flex"
         >
-          Show all category <HiOutlineArrowNarrowRight />
+          Show all category <FaArrowRightLong />
         </Button>
       </div>
       <div className="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
@@ -28,7 +28,7 @@ const CategorySection = () => {
           variant="ghost"
           className="mt-5 flex items-center justify-center gap-2"
         >
-          Show all category <HiOutlineArrowNarrowRight />
+          Show all category <FaArrowRightLong />
         </Button>
       </div>
     </Container>
